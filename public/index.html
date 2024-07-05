@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❌n⭕</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="game">
+    <h1>Tic Tac Toe</h1>
+    <div id="controls">
+      <button id="createGame">Create Game</button>
+      <button id="resetGame" class="hidden">Reset Game</button>
+      <button id="invertRules" class="hidden">Invert Rules</button>
+    </div>
+    <div id="playerInfo" class="hidden"></div>
+    <div id="character" class="hidden"></div>
+    <div id="board" class="hidden">
+    <div class="strike hidden" id="strike" ></div>
+    </div>
+    <div id="scoreboard" >
+      <p>Player ❌: <span id="scoreX">0</span></p>
+      <p>Player ⭕: <span id="scoreO">0</span></p>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

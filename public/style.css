@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#game {
+  text-align: center;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#controls button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1em;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+  /* border: 2px solid black; */
+  position: relative;
+  overflow: hidden;
+}
+.strike{
+    position: absolute;
+    width: 100%;
+    border: 0.4rem solid red; 
+}
+.v2{
+    bottom: 48%;
+    transform: rotate(-45deg) scaleX(2);
+}
+.v1{
+    bottom: 48%;
+    transform: rotate(45deg) scaleX(2);
+}
+.h1{
+    top:40px;
+}
+.h2{
+    bottom: 40px;
+}
+.h3{
+    bottom: 48%;
+}
+.v2{
+    bottom:48%;
+    transform: rotate(90deg);
+}
+.v3{
+    left:33%;
+    bottom: 48%;
+    transform: rotate(90deg);
+}
+.v1{
+    right:33%;
+    bottom: 48%;
+    transform: rotate(90deg);
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+#scoreboard {
+  font-size: 1.2em;
+  margin-top: 20px;
+  position: absolute;
+  top:0;
+  left: 1rem;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+#playerInfo {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
