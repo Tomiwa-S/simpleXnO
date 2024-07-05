@@ -56,7 +56,7 @@ socket.on('gameCreated', (gameId) => {
 socket.on('gameJoined', (gameId) => {
   const urlParams = new URLSearchParams(window.location.search).get('gameId');
   if(urlParams){
-    useGameId(urlParams)
+    useGameId = urlParams;
   }
   const character = games[gameId].players[0] === socket.id ? 'X' : 'O';
   playerCharacter.textContent = character;
